@@ -5,11 +5,11 @@ int main() {
     int x, y;
     scanf("%d %d", &x, &y);
 
-    int count = 1;
-    for (int i = 1; i <= y; i++) {
-        printf("%d", count);
-        count++;
-        if (i % x == 0 || i == y) {
+    int numero = 1;
+    for (int linha = 1; linha <= y; linha++) {
+        printf("%d", numero);
+        numero++;
+        if (linha % x == 0 || linha == y) {
             printf("\n");
         } else {
             printf(" ");
