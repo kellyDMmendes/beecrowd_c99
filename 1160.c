@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 int main() {
-    int num_testes;
-    scanf("%d", &num_testes);
+    int t;
+    scanf("%d", &t);
 
-    while (num_testes--) {
-        int populacao_a, populacao_b;
-        double crescimento_a, crescimento_b;
+    while (t--) {
+        int pa, pb;
+        double g1, g2;
         
-        scanf("%d %d %lf %lf", &populacao_a, &populacao_b, &crescimento_a, &crescimento_b);
+        scanf("%d %d %lf %lf", &pa, &pb, &g1, &g2);
 
         int anos = 0;
-        while (populacao_a <= populacao_b) {
-            populacao_a += (int)(populacao_a * (crescimento_a / 100));
-            populacao_b += (int)(populacao_b * (crescimento_b / 100));
+        while (pa <= pb) {
+            pa += (int)(pa * (g1 / 100));
+            pb += (int)(pb * (g2 / 100));
             anos++;
 
             if (anos > 100) {
